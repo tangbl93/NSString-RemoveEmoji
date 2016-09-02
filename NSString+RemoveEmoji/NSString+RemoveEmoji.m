@@ -20,10 +20,15 @@ static NSCharacterSet* VariationSelectors = nil;
         const unichar low = [self characterAtIndex: 1];
         const int codepoint = ((high - 0xD800) * 0x400) + (low - 0xDC00) + 0x10000;
 
-        return (0x1D000 <= codepoint && codepoint <= 0x1F9FF);
+        return (0x1d000 <= codepoint && codepoint <= 0x1f77f) || (0x1F900 <= codepoint && codepoint <=0x1f9ff);
 
     // Not surrogate pair (U+2100-27BF)
     } else {
+        // 避免九宫格符号被判定为emoji
+        // 8个字母按键 + 右侧表情符按键
+        if ((0x278b <= high && high <= 0x2792) || high == 0x263b) {
+            return NO;
+        }
         return (0x2100 <= high && high <= 0x27BF);
     }
 }

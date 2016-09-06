@@ -1,4 +1,4 @@
-> Note:运行应该会出错，因为少了这个方法
+运行应该会出错，因为少了这个方法
 ```
 static inline UIViewController * TDKGetUIViewControllerWith(UIView *current) {
     for (UIView *view = current; view; view = view.superview) {

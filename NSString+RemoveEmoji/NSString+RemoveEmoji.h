@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "RemoveEmojiManager.h"
 
 @interface NSString (RemoveEmoji)
 

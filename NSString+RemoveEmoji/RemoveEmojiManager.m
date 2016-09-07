@@ -3,7 +3,7 @@
 //  GamesirWorld
 //
 //  Created by tangbl on 16/9/5.
-//  Copyright © 2016年 广州市小鸡快跑网络科技有限公司. All rights reserved.
+//  Copyright © 2016年 tangbl. All rights reserved.
 //
 
 #import "RemoveEmojiManager.h"
@@ -56,12 +56,16 @@
 
 #pragma mark UITextField Target Action
 - (void)textFieldDidChanged:(UITextField *)textField {
-    textField.text = [textField.text stringByRemovingEmoji];
+    if (textField.text.isIncludingEmoji) {
+        textField.text = [textField.text stringByRemovingEmoji];
+    }
 }
 
 #pragma mark UITextViewDelegate
 - (void)textViewDidChange:(UITextView *)textView {
-    textView.text = [textView.text stringByRemovingEmoji];
+    if (textView.text.isIncludingEmoji) {
+        textView.text = [textView.text stringByRemovingEmoji];
+    }
 }
 
 @end

@@ -1026,16 +1026,6 @@
 	<string>0x23</string>
 	<string>0x20E3</string>
 	<string>0x2A</string>
-	<string>0x30</string>
-	<string>0x31</string>
-	<string>0x32</string>
-	<string>0x33</string>
-	<string>0x34</string>
-	<string>0x35</string>
-	<string>0x36</string>
-	<string>0x37</string>
-	<string>0x38</string>
-	<string>0x39</string>
 	<string>0x1F51F</string>
 	<string>0x1F4AF</string>
 	<string>0x1F520</string>
@@ -1132,12 +1122,12 @@
 	<string>0x1F1F5</string>
 	<string>0x2640</string>
 	<string>0x2642</string>
+	<string>0x2695</string>
+	<string>0x1F962</string>
+	<string>0x1F961</string>
 	<string>0x1F95F</string>
 	<string>0x1F928</string>
 	<string>0x1F960</string>
-	<string>0x1F962</string>
-	<string>0x2695</string>
-	<string>0x1F961</string>
 	<string>0xE50A</string>
 	<string>0x25EF</string>
 </array>
